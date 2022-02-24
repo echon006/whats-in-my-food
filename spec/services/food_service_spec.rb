@@ -8,10 +8,10 @@ RSpec.describe FoodService do
 
       expect(searched).to be_a Hash
       expect(searched[:totalHits]).to be_an(Integer)
-      
-      expect(searched[:foods][0][:foods][:brandOwner]).to be_a String
-      expect(food[:ingredients]).to be_a String
-      expect(food[:gtinUpc]).to be_a String
+
+      expect(searched[:foods][0][:brandOwner]).to be_a String
+      expect(searched[:foods][0][:ingredients]).to be_a String
+      expect(searched[:foods][0][:gtinUpc]).to be_a String
     end
   end
 end
